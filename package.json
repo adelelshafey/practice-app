@@ -1,0 +1,25 @@
+{
+  "name": "practice-app",
+  "version": "1.0.0",
+  "description": "A simple practice app for CI/CD learning",
+  "main": "script.js",
+  "scripts": {
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "lint": "eslint *.js",
+    "lint:fix": "eslint *.js --fix",
+    "format": "prettier --write *.js *.html *.css",
+    "serve": "python3 -m http.server 8000",
+    "build": "mkdir -p dist && cp index.html style.css script.js dist/",
+    "start": "npm run serve"
+  },
+  "keywords": ["javascript", "html", "css", "ci-cd", "practice"],
+  "author": "Your Name",
+  "license": "MIT",
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "jest-environment-jsdom": "^29.7.0",
+    "eslint": "^8.57.0",
+    "prettier": "^3.2.5"
+  }
+}
